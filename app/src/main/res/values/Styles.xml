@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Container_Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item> // linha de espaço entre botoes
+        <item name="android:textSize">28sp</item> // tamanho dos numeros na calculadora
+        <item name="android:gravity">center</item> // numeros centralizados dentro do container
+        <item name="android:textStyle">bold</item> // negrito para os numeros
+        <item name="android:layout_margin">0.5dp</item> // margem sutil entre os botoes
+    </style>
+
+    <style name="Operators_Button" parent="Container_Button"> // ele pega todas as propriedades do parente container button
+        <item name="android:background">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Numbers_Button" parent="Container_Button"> // botoes em forma de numero
+        <item name="android:background">@drawable/botao_numero_clicado</item> // cor de fundo
+        <item name="android:textColor">@color/black</item> // cor do numero
+    </style>
+
+</resources>
